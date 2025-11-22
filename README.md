@@ -12,6 +12,13 @@ A full-stack insurance management application (Spring Boot backend + React front
 - Maven 3.6+
 - Node 16+ and npm (for frontend)
 
+## Tools & libraries used
+- Backend: Java, Spring Boot, Maven (wrapper: mvnw/mvnw.cmd)
+- Frontend: React, Node.js, npm
+- Key frontend libraries (see insurance-frontend/package.json): axios, bootstrap, react-router-dom, react-scripts, jwt-decode, concurrently (dev), web-vitals, @testing-library/*
+- Dev helper: concurrently is used in the frontend dev script to run the React app and the Spring Boot backend together (see `dev` script in insurance-frontend/package.json)
+- Proxy: frontend configured to proxy API requests to http://localhost:8080 (see `proxy` in package.json)
+
 ## Run (development)
 Backend (from project root):
 
